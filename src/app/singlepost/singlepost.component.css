@@ -1,0 +1,17 @@
+.footer{
+    font-weight: bolder;
+}
+
+.commentInput{
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.comments {
+    padding: 20px;
+    font-size: medium;
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="jumbotron">
+        <div class="card">
+            <div class="card-header text-center">
+                  <h2>  Hello {{post.firstName}}! - Your Profile </h2>
+            </div>
+            <div class="card-body ">
+                <div class="element">
+                   First Name : {{post.firstName}}
+                </div>
+                <hr>
+                <div class="element">
+                    Last Name : {{post.lastName}}
+                </div>
+                <hr>
+                <div class="element">
+                   Email : {{post.email}}
+                </div>
+                <hr>
+                <div class="element">
+                   Bio : {{post.bio}}
+                </div>
+                <hr>
+                <div class="element">
+                   Age : {{post.age}}
+                </div><hr>
+                <div class="element">
+                  Gender : {{post.gender}}
+                </div><hr>
+
+                <div>
+                        <button (click)="editProfile()"  class="btn btn-primary" style="float: right;"> Edit Profile</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+</div>

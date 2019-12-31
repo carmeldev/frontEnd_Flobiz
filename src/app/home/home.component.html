@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div>
+        <div *ngFor="let post of posts">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2> {{post.title}} </h2>
+                </div>
+                <div class="card-body">
+                    {{post.description}}
+                </div>
+                <div class="card-footer">
+                    <span class="footer"> Author : {{post.author}} </span>
+
+                    <span style="float:right" class="footer"> Likes: {{post.likes}}</span>
+                    <div class="text-center">  <button class="btn btn-info" (click)="openComments(post.id)"  >Open</button></div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
